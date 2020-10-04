@@ -1,0 +1,47 @@
+{
+    "workbench.colorTheme": "Just Black",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnPaste": false,
+    "terminal.integrated.fontSize": 16,
+    "editor.fontFamily": "Anonymous Pro",
+    "editor.tabSize": 4,
+    "eslint.enable": true,
+    "eslint.validate": [
+        {
+          "language": "vue",
+          "autoFix": true
+        },
+        {
+            "language": "typescript",
+            "autoFix": true
+          },
+        {
+          "language": "html",
+          "autoFix": true
+        },
+        {
+          "language": "javascript",
+          "autoFix": true
+        }
+    ],
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.suggestSelection": "first",
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "editor.lineHeight": 0,
+    "editor.fontSize": 18,
+    "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'"
+}

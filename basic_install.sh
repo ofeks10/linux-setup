@@ -10,12 +10,21 @@ cp -r ./.config/powerline-shell ~/.config
 sudo apt install -y fonts-powerline
 echo "Don't forget to update your terminal font"
 
-# Install vscode
+# Install vscode and extensions
 sudo snap install --classic code
-
-# Make bash case-insensitive
-cp ./dotfiles/.inputrc ~/.inputrc
+while read line; do code --install-extension "$line";done < ./vscode/extensions.txt
 
 # Web dev stuff
 # install nvm
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+
+DOTFILES=(.bashrc .bash_aliases .gitconfig .inputrc)
+
+for dotfile in $(echo ${DOTFILES[*]});
+do
+    rm ~/$(echo $dotfile)
+    ln -s `pwd`/dotfiles/$(echo $dotfile) ~/$(echo $dotfile)
+done
+
+#nvm install node
+#npm install -g lite-server eslint

@@ -1,0 +1,14 @@
+BriteSnow.vscode-toggle-quotes
+christian-kohler.npm-intellisense
+christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+dkundel.vscode-new-file
+formulahendry.auto-close-tag
+formulahendry.auto-rename-tag
+HookyQR.beautify
+ms-python.python
+Nur.just-black
+PKief.material-icon-theme
+wix.vscode-import-cost
+Zignd.html-css-class-completion
