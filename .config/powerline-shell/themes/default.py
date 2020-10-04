@@ -72,8 +72,8 @@ class DefaultColor(object):
     AWS_PROFILE_FG = 39
     AWS_PROFILE_BG = 238
 
-    TIME_FG = 7
-    TIME_BG = 2
+    TIME_FG = 0
+    TIME_BG = 148
 
 
 class Color(DefaultColor):
