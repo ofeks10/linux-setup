@@ -1,0 +1,24 @@
+{
+  "theme": "~/.config/powerline-shell/themes/default.py",
+  "segments": [
+    "time",
+    "username",
+    "hostname",
+    "virtual_env",
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs",
+    "~/.config/powerline-shell/segments/my_root.py"
+  ],
+  "time": {
+      "format": "%H:%M"
+  },
+  "cwd": {
+      "max_depth": 4
+  },
+  "vcs": {
+      "show_symbol": "true"
+  }
+}
