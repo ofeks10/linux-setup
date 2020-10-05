@@ -22,10 +22,12 @@
 	nb = checkout -b
 	st = status
 	quicklog = log --pretty=format:'%Cblue%h %Cred%cD %Creset%cn %Cgreen%s%Creset' --date-order --graph
-    changes = log --oneline --decorate
+	changes = log --oneline --decorate
 	undo = reset --soft --keep HEAD^
-    unstage = reset HEAD
+	unstage = reset HEAD
 	a = add
 	c = commit
 	ca = commit -a
 	cm = commit -m
+	p = pull
+	pr = pull --recurse-submodules
