@@ -30,3 +30,5 @@ alias start='npm start'
 alias nr='npm run'
 alias run='npm run'
 alias nis='npm i -S'
+
+alias tmux="tmux -2 -u"
