@@ -1,47 +1,62 @@
 {
-    "workbench.colorTheme": "Just Black",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.formatOnPaste": false,
-    "terminal.integrated.fontSize": 16,
-    "editor.fontFamily": "Anonymous Pro",
-    "editor.tabSize": 4,
-    "eslint.enable": true,
-    "eslint.validate": [
-        {
-          "language": "vue",
-          "autoFix": true
-        },
-        {
-            "language": "typescript",
-            "autoFix": true
-          },
-        {
-          "language": "html",
-          "autoFix": true
-        },
-        {
-          "language": "javascript",
-          "autoFix": true
-        }
-    ],
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.suggestSelection": "first",
-    "[javascript]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+  "workbench.colorTheme": "Just Black",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnPaste": false,
+  "terminal.integrated.fontSize": 16,
+  "editor.fontFamily": "Anonymous Pro",
+  "editor.tabSize": 4,
+  "eslint.enable": true,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
     },
-    "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+    {
+      "language": "typescript",
+      "autoFix": true
     },
-    "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+    {
+      "language": "html",
+      "autoFix": true
     },
-    "[css]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
-    },
-    "editor.lineHeight": 0,
-    "editor.fontSize": 18,
-    "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'"
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggestSelection": "first",
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "editor.lineHeight": 0,
+  "editor.fontSize": 18,
+  "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 0,
+  "stories.username": "ofeks10",
+  "stories.flair": "react",
+  "python.pythonPath": "/usr/bin/python3",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "rust-client.engine": "rust-analyzer",
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": {
+    "<C-w>": false,
+    "<C-n>": false,
+  }
 }
