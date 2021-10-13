@@ -59,11 +59,18 @@
     "<C-w>": false,
     "<C-n>": false,
   },
+  "vim.easymotion": true,
+  "vim.surround": true,
+  "vim.leader": ",",
+  "vim.easymotionMarkerFontWeight": "bold",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "editor.rulers": [80]
+  "editor.rulers": [
+    80
+  ],
+  "security.workspace.trust.untrustedFiles": "open"
 }
