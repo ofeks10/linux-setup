@@ -1,3 +1,4 @@
+bierner.emojisense
 BriteSnow.vscode-toggle-quotes
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
@@ -7,8 +8,17 @@ dkundel.vscode-new-file
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 HookyQR.beautify
+matklad.rust-analyzer
 ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-vscode.cpptools
 Nur.just-black
 PKief.material-icon-theme
+redhat.java
+streetsidesoftware.code-spell-checker
+vscodevim.vim
 wix.vscode-import-cost
 Zignd.html-css-class-completion
