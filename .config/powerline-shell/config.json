@@ -1,6 +1,7 @@
 {
   "theme": "~/.config/powerline-shell/themes/default.py",
   "segments": [
+    "battery",
     "username",
     "hostname",
     "virtual_env",
