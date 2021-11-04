@@ -7,6 +7,7 @@ dbaeumer.vscode-eslint
 dkundel.vscode-new-file
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+GitHub.copilot
 HookyQR.beautify
 matklad.rust-analyzer
 ms-python.python

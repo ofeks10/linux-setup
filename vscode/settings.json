@@ -72,5 +72,8 @@
   "editor.rulers": [
     80
   ],
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "python.defaultInterpreterPath": "/usr/local/bin/python3.10",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.inlineSuggest.enable": true,
 }
