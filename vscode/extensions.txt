@@ -2,7 +2,6 @@ bierner.emojisense
 BriteSnow.vscode-toggle-quotes
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
-CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
 dkundel.vscode-new-file
 formulahendry.auto-close-tag

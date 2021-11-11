@@ -49,3 +49,9 @@ export NVM_DIR="$HOME/.nvm"
 
 export JAVA_HOME=/opt/jdk-17
 export PATH=$PATH:$JAVA_HOME/bin
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
