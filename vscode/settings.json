@@ -6,6 +6,13 @@
   "editor.fontFamily": "Anonymous Pro",
   "editor.tabSize": 4,
   "eslint.enable": true,
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "eslint.validate": [
     {
       "language": "vue",
@@ -46,8 +53,6 @@
   "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "stories.username": "ofeks10",
-  "stories.flair": "react",
   "python.pythonPath": "/usr/bin/python3",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
@@ -82,17 +87,7 @@
     "markdown": false
   },
   "editor.bracketPairColorization.enabled": true,
-  "workbench.colorCustomizations": {
-    "[Panda Syntax]": {
-      "editorBracketHighlight.foreground1": "#E6E6E6",
-      "editorBracketHighlight.foreground2": "#FF75B5",
-      "editorBracketHighlight.foreground3": "#19f9d8",
-      "editorBracketHighlight.foreground4": "#B084EB",
-      "editorBracketHighlight.foreground5": "#45A9F9",
-      "editorBracketHighlight.foreground6": "#FFB86C",
-      "editorBracketHighlight.unexpectedBracket.foreground": "#FF2C6D"
-    },
-  },
+  "window.zoomLevel": 1,
   "editor.guides.bracketPairs" : true,
   "editor.guides.highlightActiveIndentation" : true,
   "editor.guides.bracketPairsHorizontal" : "active",
@@ -113,6 +108,20 @@
       "editorBracketPairGuide.activeBackground6": "#19f9d8",
     }
   },
-  "window.zoomLevel": 1,
   "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.autoImportCompletions": true,
+  "editor.fontLigatures": true,
+  "editor.linkedEditing": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+  },
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript":"javascriptreact",
+    "python":"python",
+  },
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
 }
