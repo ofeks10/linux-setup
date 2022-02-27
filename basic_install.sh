@@ -13,6 +13,7 @@ echo "Don't forget to update your terminal font"
 # Install vscode and extensions
 sudo snap install --classic code
 while read line; do code --install-extension "$line";done < ./vscode/extensions.txt
+cp ./vscode/settings.json ~/.config/Code/User/
 
 # Web dev stuff
 # install nvm
