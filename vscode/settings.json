@@ -84,7 +84,8 @@
     "*": true,
     "yaml": false,
     "plaintext": true,
-    "markdown": false
+    "markdown": false,
+    "java": true
   },
   "editor.bracketPairColorization.enabled": true,
   "window.zoomLevel": 1,
@@ -124,4 +125,5 @@
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
+  "path-intellisense.absolutePathToWorkspace": true,
 }
