@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # update and upgrade the system
 sudo apt update && sudo apt upgrade
 
@@ -17,7 +19,7 @@ cp ./vscode/settings.json ~/.config/Code/User/
 
 # Web dev stuff
 # install nvm
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 DOTFILES=(.bashrc .bash_aliases .gitconfig .inputrc)
 
