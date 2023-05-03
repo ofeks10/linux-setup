@@ -38,3 +38,7 @@
 
 [push]
     autoSetupRemote = true
+[credential]
+	helper = store
+[credential "https://vcs.ap.runi.ac.il"]
+	username = ofek.shiffman
