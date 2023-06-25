@@ -76,3 +76,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# github copilot cli shortcuts
+eval "$(github-copilot-cli alias -- "$0")"
