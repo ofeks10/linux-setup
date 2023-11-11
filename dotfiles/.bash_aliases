@@ -35,3 +35,5 @@ alias tmux="tmux -2 -u"
 
 alias doup="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade && sudo apt autoremove"
 alias arduino-studio="sudo arduino-studio --in-process-gpu --no-sandbox"
+
+alias cat=batcat
