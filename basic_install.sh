@@ -1,19 +1,28 @@
 #!/bin/bash
 
+# make sure we're running as sudo
+if [ "$(id -u -n)" != "root" ]; then
+        echo Please execute this script as root\!
+        exit 1
+fi
+
 # update and upgrade the system
-sudo apt update && sudo apt upgrade
+apt update && sudo apt upgrade
 
 # install pip
-sudo apt install -y python3-pip
+apt install -y python3-pip
 
 # Install and configure powerline-shell
 pip3 install powerline-shell
 cp -r ./.config/powerline-shell ~/.config
-sudo apt install -y fonts-powerline
+apt install -y fonts-powerline
 echo "Don't forget to update your terminal font"
 
+# install bat and exa
+apt install -y bat exa
+
 # Install vscode and extensions
-sudo snap install --classic code
+snap install --classic code
 while read line; do code --install-extension "$line";done < ./vscode/extensions.txt
 cp ./vscode/settings.json ~/.config/Code/User/
 
