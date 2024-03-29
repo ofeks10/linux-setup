@@ -78,3 +78,5 @@ unset __conda_setup
 
 # github copilot cli shortcuts
 eval "$(github-copilot-cli alias -- "$0")"
+
+[ -f "/home/ofeks10/.ghcup/env" ] && . "/home/ofeks10/.ghcup/env" # ghcup-env
