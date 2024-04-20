@@ -33,7 +33,7 @@ alias nis='npm i -S'
 
 alias tmux="tmux -2 -u"
 
-alias doup="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade && sudo apt autoremove"
+alias doup="sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y"
 alias arduino-studio="sudo arduino-studio --in-process-gpu --no-sandbox"
 
 alias cat=batcat
