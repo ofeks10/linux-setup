@@ -13,51 +13,16 @@
   "typescript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "eslint.validate": [
-    {
-      "language": "vue",
-      "autoFix": true
-    },
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "html",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
-    }
-  ],
   "workbench.startupEditor": "newUntitledFile",
   "editor.suggestSelection": "first",
-  "[javascript]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
   "editor.lineHeight": 0,
   "editor.fontSize": 18,
   "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "python.pythonPath": "/usr/bin/python3",
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook"
   },
-  "rust-client.engine": "rust-analyzer",
   "vim.useSystemClipboard": true,
   "vim.handleKeys": {
     "<C-w>": false,
@@ -76,19 +41,24 @@
   "editor.rulers": [
     80
   ],
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnType": true
+  },
   "security.workspace.trust.untrustedFiles": "open",
-  "python.defaultInterpreterPath": "/usr/local/bin/python3.10",
+  "python.defaultInterpreterPath": "/home/ofeks10/anaconda3/envs/ml",
   "editor.inlineSuggest.enabled": true,
-  "github.copilot.inlineSuggest.enable": true,
+  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
     "plaintext": true,
-    "markdown": false,
-    "java": true
+    "markdown": true,
+    "scminput": false,
+    "yaml": true,
+    "java": true,
+    "python": true
   },
   "editor.bracketPairColorization.enabled": true,
-  "window.zoomLevel": 1,
   "editor.guides.bracketPairs" : true,
   "editor.guides.highlightActiveIndentation" : true,
   "editor.guides.bracketPairsHorizontal" : "active",
@@ -109,13 +79,10 @@
       "editorBracketPairGuide.activeBackground6": "#19f9d8",
     }
   },
-  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "editor.fontLigatures": true,
   "editor.linkedEditing": true,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-  },
   "emmet.includeLanguages": {
     "vue-html": "html",
     "javascript":"javascriptreact",
@@ -126,4 +93,29 @@
     "files.trimTrailingWhitespace": false
   },
   "path-intellisense.absolutePathToWorkspace": true,
+  "remote.SSH.remotePlatform": {
+    "10.0.0.67": "linux"
+  },
+  "java.imports.gradle.wrapper.checksums": [
+    {
+      "sha256": "d8b325cb1c850084b596b9980b84a733f4cd35843128c2cf3cce52372fb34443",
+      "allowed": true
+    }
+  ],
+  "terminal.integrated.inheritEnv": false,
+  "jupyter.askForKernelRestart": false,
+  "window.zoomLevel": 1,
+  "git.openRepositoryInParentFolders": "always",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "haskell.manageHLS": "GHCup",
+  "haskell.toolchain": {
+    "ghc": "9.4.8",
+    "hls": "2.7.0.0"
+  },
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  }
 }
