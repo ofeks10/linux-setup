@@ -25,6 +25,7 @@ apt install -y bat exa
 snap install --classic code
 while read line; do code --install-extension "$line";done < ./vscode/extensions.txt
 cp ./vscode/settings.json ~/.config/Code/User/
+cp ./vscode/keybindings.json ~/.config/Code/User/
 
 # Web dev stuff
 # install nvm
