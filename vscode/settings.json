@@ -1,28 +1,111 @@
 {
+  // Window settings
+  "window.zoomLevel": 1,
+  "window.title": "🦙 – ${activeEditorShort}${separator}${rootName} – 🦙",
+
+  // Workbench settings
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorTheme": "Just Black",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.formatOnPaste": false,
-  "terminal.integrated.fontSize": 16,
-  "editor.fontFamily": "Anonymous Pro",
-  "editor.tabSize": 4,
-  "eslint.enable": true,
-  "html.autoClosingTags": true,
-  "javascript.autoClosingTags": true,
-  "typescript.autoClosingTags": true,
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.suggestSelection": "first",
-  "editor.lineHeight": 0,
-  "editor.fontSize": 18,
-  "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#5c4f67",
+
+    "editorBracketPairGuide.background1": "#FFB86C",
+    "editorBracketPairGuide.background2": "#FF75B5",
+    "editorBracketPairGuide.background3": "#45A9F9",
+    "editorBracketPairGuide.background4": "#B084EB",
+    "editorBracketPairGuide.background5": "#E6E6E6",
+    "editorBracketPairGuide.background6": "#19f9d8",
+
+    "editorBracketPairGuide.activeBackground1": "#FFB86C",
+    "editorBracketPairGuide.activeBackground2": "#FF75B5",
+    "editorBracketPairGuide.activeBackground3": "#45A9F9",
+    "editorBracketPairGuide.activeBackground4": "#B084EB",
+    "editorBracketPairGuide.activeBackground5": "#E6E6E6",
+    "editorBracketPairGuide.activeBackground6": "#19f9d8",
+  },
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.wrapTabs": true,
+  "workbench.tree.indent": 20,
+
+  // Editor settings
+  "editor.formatOnPaste": false,
+  "editor.fontFamily": "Anonymous Pro",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 4,
+  "editor.suggestSelection": "first",
+  "editor.fontSize": 18,
+  "editor.rulers": [
+    80,
+  ],
+  "editor.guides.bracketPairs" : true,
+  "editor.linkedEditing": true,
+
+  // Terminal settings
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "'DejaVu Sans Mono for Powerline'",
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.copyOnSelection": true,
+
+  // File settings
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/.history": true,
+    "**/.git": true,
+    "**/.cache": true,
+    "**/vendors": true,
+    "**/build": true,
+    "**/dist": false,
+    "**/coverage": true,
+    "**/*.pyc": true,
+    "**/false": true
+  },
+  "files.associations": {
+    ".env": "dotenv",
+    ".md": "markdown",
+    ".mdx": "markdown",
+  },
+
+  // Search settings
+  "search.exclude": {
+    "**/.history": true,
+    "**/.git": true,
+    "**/.cache": true,
+    "**/vendors": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/coverage": true,
+    "**/*.pyc": true,
+    "**/false": true,
+    "**/node_modules": false
+  },
+  "search.smartCase": true,
+
+  // Emmet settings
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "python": "html",
+    "erb": "html",
+    "rhtml": "html",
+  },
+
+  // Explorer settings
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // Vim settings
   "vim.useSystemClipboard": true,
   "vim.handleKeys": {
     "<C-w>": false,
@@ -32,22 +115,10 @@
   "vim.surround": true,
   "vim.leader": ",",
   "vim.easymotionMarkerFontWeight": "bold",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "editor.rulers": [
-    80
-  ],
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnType": true
-  },
-  "security.workspace.trust.untrustedFiles": "open",
-  "python.defaultInterpreterPath": "/home/ofeks10/anaconda3/envs/ml",
-  "editor.inlineSuggest.enabled": true,
+
+  // Git & Github settings
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "always",
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "*": true,
@@ -58,58 +129,41 @@
     "java": true,
     "python": true
   },
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs" : true,
-  "editor.guides.highlightActiveIndentation" : true,
-  "editor.guides.bracketPairsHorizontal" : "active",
-  "workbench.colorCustomizations": {
-    "[Panda Syntax]": {
-      "editorBracketPairGuide.background1": "#FFB86C",
-      "editorBracketPairGuide.background2": "#FF75B5",
-      "editorBracketPairGuide.background3": "#45A9F9",
-      "editorBracketPairGuide.background4": "#B084EB",
-      "editorBracketPairGuide.background5": "#E6E6E6",
-      "editorBracketPairGuide.background6": "#19f9d8",
 
-      "editorBracketPairGuide.activeBackground1": "#FFB86C",
-      "editorBracketPairGuide.activeBackground2": "#FF75B5",
-      "editorBracketPairGuide.activeBackground3": "#45A9F9",
-      "editorBracketPairGuide.activeBackground4": "#B084EB",
-      "editorBracketPairGuide.activeBackground5": "#E6E6E6",
-      "editorBracketPairGuide.activeBackground6": "#19f9d8",
-    }
+  // Python & Jupyter notbook settings
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnType": true
   },
+  "python.defaultInterpreterPath": "/home/ofeks10/anaconda3/envs/ml",
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
-  "editor.fontLigatures": true,
-  "editor.linkedEditing": true,
-  "emmet.includeLanguages": {
-    "vue-html": "html",
-    "javascript":"javascriptreact",
-    "python":"python",
-  },
-  "files.trimTrailingWhitespace": true,
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false
-  },
-  "path-intellisense.absolutePathToWorkspace": true,
-  "remote.SSH.remotePlatform": {
-    "10.0.0.67": "linux"
-  },
-  "java.imports.gradle.wrapper.checksums": [
-    {
-      "sha256": "d8b325cb1c850084b596b9980b84a733f4cd35843128c2cf3cce52372fb34443",
-      "allowed": true
-    }
-  ],
-  "terminal.integrated.inheritEnv": false,
   "jupyter.askForKernelRestart": false,
-  "window.zoomLevel": 1,
-  "git.openRepositoryInParentFolders": "always",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
+  "path-intellisense.absolutePathToWorkspace": true,
+
+  // Security settings
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Web settings
+  "eslint.enable": true,
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Markdown settings
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+
+  // Haskell settings
   "haskell.manageHLS": "GHCup",
   "haskell.toolchain": {
     "ghc": "9.4.8",

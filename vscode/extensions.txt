@@ -10,6 +10,7 @@ github.copilot
 github.copilot-chat
 haskell.haskell
 justusadam.language-haskell
+mikestead.dotenv
 ms-python.autopep8
 ms-python.debugpy
 ms-python.isort
