@@ -44,6 +44,40 @@
   ],
   "editor.guides.bracketPairs" : true,
   "editor.linkedEditing": true,
+  "editor.tokenColorCustomizations": {
+    "[Just Black]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "punctuation.definition.markdown"
+          ],
+          "settings": {
+              "foreground": "#5C5A72",
+              "fontStyle": ""
+          }
+        },
+        {
+          "scope": [
+            "comment.block",
+            "punctuation.definition.comment"
+          ],
+          "settings": {
+              "foreground": "#CF0000",
+              "fontStyle": ""
+          }
+        },
+        {
+          "scope": "string.quoted.docstring",
+          "settings": {
+              "foreground": "#5C5A72",
+              "fontStyle": "italic"
+          }
+        }
+      ],
+
+    }
+  },
 
   // Terminal settings
   "terminal.integrated.fontSize": 16,
