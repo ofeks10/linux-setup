@@ -1,16 +1,10 @@
 #!/bin/bash
 
-# make sure we're running as sudo
-if [ "$(id -u -n)" != "root" ]; then
-        echo Please execute this script as root\!
-        exit 1
-fi
-
 # update and upgrade the system
-apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade
 
 # install pip
-apt install -y python3-pip
+sudo apt install -y python3-pip
 
 # Install and configure powerline-shell
 pip3 install powerline-shell
