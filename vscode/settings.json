@@ -205,5 +205,6 @@
   },
   "[haskell]": {
     "editor.defaultFormatter": "haskell.haskell"
-  }
+  },
+  "prisma.showPrismaDataPlatformNotification": false
 }
