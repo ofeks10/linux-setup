@@ -97,3 +97,6 @@ alias cat=batcat
 # Set up fzf
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
