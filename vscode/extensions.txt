@@ -1,3 +1,4 @@
+alexcvzz.vscode-sqlite
 bradlc.vscode-tailwindcss
 britesnow.vscode-toggle-quotes
 charliermarsh.ruff
@@ -6,10 +7,13 @@ christian-kohler.path-intellisense
 cschlosser.doxdocgen
 dbaeumer.vscode-eslint
 equimper.react-native-react-redux
+esbenp.prettier-vscode
+formulahendry.auto-rename-tag
 github.copilot
 github.copilot-chat
 haskell.haskell
 justusadam.language-haskell
+mhutchie.git-graph
 mikestead.dotenv
 ms-python.autopep8
 ms-python.debugpy
