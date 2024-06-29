@@ -31,6 +31,9 @@ cp ./vscode/keybindings.json ~/.config/Code/User/
 # install nvm
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 
+# Install pnpm
+wget -qO- https://get.pnpm.io/install.sh | sh -
+
 DOTFILES=(.bashrc .bash_aliases .gitconfig .inputrc)
 
 for dotfile in $(echo ${DOTFILES[*]});

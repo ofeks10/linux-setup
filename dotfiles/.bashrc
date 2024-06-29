@@ -61,23 +61,20 @@ export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/ofeks10/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/ofeks10/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/ofeks10/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/ofeks10/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 # github copilot cli shortcuts
 eval "$(github-copilot-cli alias -- "$0")"
 
 [ -f "/home/ofeks10/.ghcup/env" ] && . "/home/ofeks10/.ghcup/env" # ghcup-envexport LD_LIBRARY_PATH=/usr/lib/cuda/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/lib/cuda/include:$LD_LIBRARY_PATH
+
+# pnpm
+export PNPM_HOME="/home/ofeks10/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export PATH=/home/ofeks10/bin:$PATH
