@@ -19,6 +19,21 @@ source $ZINIT_HOME/zinit.zsh
 # Add Powerlevel10k prompt
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
+if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+  ZSH_THEME=""  # Disable Powerlevel10k for Cursor
+else
+  ZSH_THEME="powerlevel10k/powerlevel10k"
+fi
+
+# Use a minimal prompt in Cursor to avoid command detection issues
+if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+  PROMPT='%n@%m:%~%# '
+  RPROMPT=''
+else
+  [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+fi
+
+
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -95,8 +110,11 @@ alias arduino-studio="sudo arduino-studio --in-process-gpu --no-sandbox"
 alias cat=batcat
 
 # Set up fzf
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(zoxide init zsh --cmd cd)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+alias cursor='~/apps/Cursor-0.48.7-x86_64.AppImage --no-sandbox'

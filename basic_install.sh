@@ -21,6 +21,8 @@ while read line; do code --install-extension "$line";done < ./vscode/extensions.
 cp ./vscode/settings.json ~/.config/Code/User/
 cp ./vscode/keybindings.json ~/.config/Code/User/
 
+apt install zsh
+
 # Web dev stuff
 # install nvm
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
