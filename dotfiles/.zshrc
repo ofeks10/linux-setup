@@ -118,3 +118,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 alias cursor='~/apps/Cursor-0.48.7-x86_64.AppImage --no-sandbox'
+
+# pnpm
+export PNPM_HOME="/home/ofeks10/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
